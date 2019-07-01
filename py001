@@ -1,0 +1,11 @@
+# Problem 1: Multiples of 3 and 5
+def myfunc(x):
+    
+    numlist = list(range(0,x))
+    multiplelist = []
+
+    for num in numlist:
+        if num%3==0 or num%5==0:
+            multiplelist.append(num)
+    print(multiplelist)
+    return sum(multiplelist)
