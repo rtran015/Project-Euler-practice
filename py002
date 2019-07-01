@@ -1,0 +1,25 @@
+# Problem 2: Even Fibonacci numbers
+def myfunc(x):
+    numlist = list(range(0,x))
+    seq = [1]
+    seq2 = []
+    a = 1 # starting number
+    b = 0 # current number
+    c = x
+    
+    # create the fib seq for range(0,x)
+    for num in numlist: 
+        b = seq[int(num)] + seq[int(num-1)]
+        seq.append(b)
+        
+        if b > c: # if the current number exceeds the limit, break the loop
+            break
+    # create the fib seq for range(0,x) where all values are even and < x    
+    for item in seq:
+        if item < x and item%2==0:
+            seq2.append(item)
+            
+    print(seq)
+    print(seq2)
+    
+    return sum(seq2)
