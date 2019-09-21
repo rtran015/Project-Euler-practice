@@ -1,0 +1,21 @@
+# Problem 4: Largest palindrome product
+
+range_1 = range(100,1000)
+range_2 = range(100,1000)
+
+num1_list = []
+num2_list = []
+palindrome_list = []
+
+for i1 in range_1:
+    for i2 in range_2:
+        prod = i1 * i2
+        prodstr = str(prod)
+        if prodstr == prodstr[::-1]:
+            num1_list.append(i1)
+            num2_list.append(i2)
+            palindrome_list.append(prodstr)
+print(num1_list[-1])
+print(num2_list[-1])
+print(palindrome_list[-1])
+            
