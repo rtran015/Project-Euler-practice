@@ -1,0 +1,12 @@
+# Problem 3: Largest prime factor
+
+num = 600851475143 
+factors = range(1,1000000)
+prime_list = []
+
+for i in factors:
+    if (num / i) % 1 == 0:
+        prime_list.append(i)
+        num = (num / i)
+
+print(prime_list)
