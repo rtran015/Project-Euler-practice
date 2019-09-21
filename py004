@@ -14,8 +14,10 @@ for i1 in range_1:
         if prodstr == prodstr[::-1]:
             num1_list.append(i1)
             num2_list.append(i2)
-            palindrome_list.append(prodstr)
-print(num1_list[-1])
-print(num2_list[-1])
-print(palindrome_list[-1])
+            palindrome_list.append(int(prodstr))
             
+# print(num1_list[-1])
+# print(num2_list[-1])
+# print(palindrome_list[-1])
+
+print(max(palindrome_list))
